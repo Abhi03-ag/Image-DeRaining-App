@@ -14,7 +14,7 @@ Android Studio ML Model Binding was used to import these models into the Android
 
 ## Build and run
 * Clone the project repo:  
-`git clone https://github.com/Abhi03-ag/ImageDeraining.git`  
+`git clone https://github.com/Abhi03-ag/CaptureDeRainedImages.git`  
 * Open the Android code android/CaptureDeRainedImages in android Studio.
 * Connect your Android device to computer then click on `"Run -> Run 'app'`.
 * Once the app is launched on device, grant camera permission.
