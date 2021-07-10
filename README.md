@@ -24,5 +24,12 @@ Android Studio ML Model Binding was used to import these models into the Android
 
 
 ## App Screenshot
-**HomeScreen**
-<image src = "AppScreenshot/HomeScreen" width="100">
+
+  
+ **HomeScreen**            |  **ResultScreen**
+:-------------------------:|:-------------------------:
+  
+  <p float="left">
+  <img src="AppScreenShots/HomeScreen.jpg" height="400" />
+  <img src="AppScreenShots/ResultScreen.jpg" height="400" /> 
+  </p>
