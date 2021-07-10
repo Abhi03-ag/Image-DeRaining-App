@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/about"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/imageview_input"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageview_input"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/sourceimage"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/frame_output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <FrameLayout
+        android:id="@+id/frame_output"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/inference_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageview_input">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageview_output"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/outputimage" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/inference_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Try"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_output" />
+
+    <Button
+        android:id="@+id/Try"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:text="@string/try_with_another_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="655dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inference_info"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

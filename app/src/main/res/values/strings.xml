@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CaptureDeRainedImages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="view_results">View Results</string>
+    <string name="source_image">Source Image</string>
+    <string name="about">Results</string>
+    <string name="outputimage">OutputImage</string>
+    <string name="sourceimage">SourceImage</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="edit">Edit</string>
+    <string name="try_with_another_image">Try with Another Image</string>
+</resources>
