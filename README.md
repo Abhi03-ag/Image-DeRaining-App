@@ -21,3 +21,8 @@ Android Studio ML Model Binding was used to import these models into the Android
 * Connect your Android device to computer then click on `"Run -> Run 'app'`.
 * Once the app is launched on device, grant camera permission.
 * Use the App
+
+
+## App Screenshot
+**HomeScreen**
+<image src = "AppScreenshot/HomeScreen" width="100">
